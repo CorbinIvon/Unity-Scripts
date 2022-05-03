@@ -10,6 +10,7 @@ private void SpawnRoom(Vector3 room_pos, Vector2 room_dimentions, list<Room> _ot
 
 
 	}
+}
 
 public class Room{
 	public BoundingBox;
@@ -43,5 +44,4 @@ public class BoundingBox{
 				back=_go.vertice.z;
 		}
 	}
-}
 }
