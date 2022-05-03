@@ -1,0 +1,47 @@
+
+private void SpawnRoom(Vector3 room_pos, Vector2 room_dimentions, list<Room> _other_rooms){
+	// Please use whole numbers for rooms.
+	// Check the current room to make sure the current room does not overlap other rooms.
+	for (int r = 0; r < _other_rooms.count; r++){
+		// Iterate through each existing room
+		// Create an overlap zone (detects if a point is within another point)
+		// Get the extremes for top, bottom, right, left, up, and down.
+		// Calculate based off extremes
+
+
+	}
+
+public class Room{
+	public BoundingBox;
+
+	public Room(GameObject _go){
+		BoundingBox = new BoundingBox(_go);
+	}
+}
+public class BoundingBox{
+	// Govern the extremes of this object.
+	public float top 			= 0;
+	public float bottom 	= 0;
+	public float right 		= 0;
+	public float left 		= 0;
+	public float front 		= 0;
+	public float back 		= 0;
+	public BoundingBox(GameObject _go){
+		// Iterate through each vertice.
+		for (int v=0; v < _go.vertice.count; v++){
+			if (top < _go.vertice.y)
+				top=_go.vertice.y;
+			if (bottom > _go.vertice.y)
+				bottom=_go.vertice.y;
+			if (right < _go.vertice.x)
+				right=_go.vertice.x;
+			if (left > _go.vertice.x)
+				left=_go.vertice.x;
+			if (front < _go.vertice.z)
+				front=_go.vertice.z;
+			if (back > _go.vertice.z)
+				back=_go.vertice.z;
+		}
+	}
+}
+}

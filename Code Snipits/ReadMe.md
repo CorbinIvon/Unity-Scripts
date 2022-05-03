@@ -1,0 +1,1 @@
+These Files will not work if copied and pasted. These snipits are more or less pseudo code.
