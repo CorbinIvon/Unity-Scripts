@@ -20,8 +20,8 @@ public class Room{
 }
 public class BoundingBox{
 	// Govern the extremes of this object.
-	public float top 			= 0;
-	public float bottom 	= 0;
+	public float top 		= 0;
+	public float bottom 		= 0;
 	public float right 		= 0;
 	public float left 		= 0;
 	public float front 		= 0;
